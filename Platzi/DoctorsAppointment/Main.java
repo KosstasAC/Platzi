@@ -1,6 +1,7 @@
 import java.util.Date;
 
 import Model.Doctor;
+import Model.Patient;
 import Model.User;
 
 public class Main {
@@ -36,6 +37,20 @@ public class Main {
 
       User user = new Doctor("Jose", "Ksid.com", null);
       user.showDataUser();
+
+      User userPatient = new Patient("Jose", "Ksid.com");
+      userPatient.showDataUser();
+
+      User userA = new Model.User.User("djfn", "kdfjkj") {
+      
+         @Override
+         public void showDateUser(){
+
+            System.out.println("Este es un DOCTOOOR");
+         }
+      };
+
+userA.showDataUser();
 
    }
 }
