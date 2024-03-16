@@ -1,11 +1,12 @@
 package Model;
 
-public class User {
+public abstract class User {
     private int id;
     private String name;
     private String email;
     private String address;
     private String phoneNumber;
+    private String blood;
 
     public User(String name, String email) {
         this.name = name;
@@ -77,5 +78,7 @@ public class User {
         return "User : " + name + ", Email : " + email + "\nAddress : " + address +
                 ". Phone : " + phoneNumber;
     }
+
+    public abstract void showDataUser();
 
 }

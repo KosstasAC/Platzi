@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Doctor extends User {
-    // Atributo:
+    // Attribute:
     private String speciality;
+    private ArrayList<AvailableAppointment> availableAppointments;
 
-    Doctor(String name, String email, String speciality) {
+    public Doctor(String name, String email, String speciality) {
         super(name, email);
-        System.out.println("El nombre del Doctor asignado es: " + name);
+        System.out.println("The assigned Doctor's name is: " + name);
         this.speciality = speciality;
+        this.availableAppointments = new ArrayList<>();
     }
-
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     public void addAvailableAppointment(Date date, String time) {
         availableAppointments.add(new AvailableAppointment(date, time));
@@ -40,14 +40,6 @@ public class Doctor extends User {
 
         // Getters & Setters:
 
-        public String getSpeciality() {
-            return speciality;
-        }
-
-        public void setSpeciality(String speciality) {
-            this.speciality = speciality;
-        }
-
         public Date getDate() {
             return date;
         }
@@ -66,10 +58,16 @@ public class Doctor extends User {
 
         @Override
         public String toString() {
-            return "";
-
+            return "Date: " + date + ", Time: " + time;
         }
 
     }
 
+    // Override the showDataUser method inherited from the User class
+    @Override
+    public void showDataUser() {
+        System.out.println("Name: " + getName());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Speciality: " + speciality);
+    }
 }
