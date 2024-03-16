@@ -1,0 +1,23 @@
+DRY: Don't Repeat Yourself.
+
+-Promueve la reduccion de duplicacion en programacion.
+-Las piesas de informacion nunca deben duplicarse.
+-Incrementa la dificultad en los cambios y evolucion.
+
+    N.T: DRY allows us on not being redundant with our code, so it's legible.
+
+Herencia: Crear nuevas clases a partir de otras.
+
+    E.j: La Herencia en la programacion funciona muy similar a la genetica. Se heredan
+        ciertos atributos que permiten generar comportamiento relacionados con la Clase Padre.
+
+-Clase Padre(Superclase): Clase en la que se originan los atributos y objetos heredados.
+        N.T: En esta Superclase occurre la Abstraccion. La cual permite la generalizacion de variables
+            y metodos para ser luego especificados en la Subclase. (Estas caracteristicas luego se invoca de forma
+            mas limpia en la clase Main). 
+
+-Clase Hija(Subclase): Clase en la que se heredan los atributos y objetos para ser utilizados a traves
+    de la herancia.
+
+    N.T: En la Herencia hay una relacion entre padre e hijo. En esta se traspasan atributos.
+        Esta dinamica se llama Herencia.
