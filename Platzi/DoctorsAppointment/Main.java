@@ -26,15 +26,6 @@ public class Main {
       System.out.println();
       System.out.println();
 
-      // Assuming `user` and `doctor` are instances of User class,
-      // as no such objects are instantiated in the provided code,
-      // it's not clear what you intended to do here.
-      // Assuming they are supposed to be instances of the User and Doctor classes
-      // respectively,
-      // you need to create instances of those classes before calling the
-      // showDataUser() method.
-      // For now, let's comment out these lines.
-
       User user = new Doctor("Jose", "Ksid.com", null);
       user.showDataUser();
 
@@ -51,6 +42,14 @@ public class Main {
       };
 
 userA.showDataUser();
+
+// Ischedulable ischedulable = new Ischedulable(){
+//    @Override
+//    public void schedule(Date date, Strong time){
+
+
+//    }
+// };
 
    }
 }
