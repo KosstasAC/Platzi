@@ -10,6 +10,7 @@ public class Doctor extends User {
 
     public Doctor(String name, String email, String speciality) {
         super(name, email);
+
         System.out.println("The assigned Doctor's name is: " + name);
         this.speciality = speciality;
         this.availableAppointments = new ArrayList<>();

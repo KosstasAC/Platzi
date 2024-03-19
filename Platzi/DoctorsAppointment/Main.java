@@ -3,6 +3,8 @@ import java.util.Date;
 import Model.Doctor;
 import Model.Patient;
 import Model.User;
+import Ui.UIDoctorMenu;
+import Ui.UIMenu;
 
 public class Main {
    public static void main(String[] args) {
@@ -26,22 +28,22 @@ public class Main {
       System.out.println();
       System.out.println();
 
-      User user = new Doctor("Jose", "Ksid.com", null);
-      user.showDataUser();
+      // User user = new Doctor("Jose", "Ksid.com", "NeuroCirujano");
+      // user.showDataUser();
 
-      User userPatient = new Patient("Jose", "Ksid.com");
-      userPatient.showDataUser();
+      // User userPatient = new Patient("Jose", "Jose@gmail.com");
+      // userPatient.showDataUser();
 
-      User userA = new Model.User.User("djfn", "kdfjkj") {
+      // User userA = new Model.User.User("djfn", "kdfjkj") {
       
-         @Override
-         public void showDateUser(){
+//          @Override
+//          public void showDateUser(){
 
-            System.out.println("Este es un DOCTOOOR");
-         }
-      };
+//             System.out.println("Este es un DOCTOOOR");
+//          }
+//       };
 
-userA.showDataUser();
+// userA.showDataUser();
 
 // Ischedulable ischedulable = new Ischedulable(){
 //    @Override
@@ -50,6 +52,11 @@ userA.showDataUser();
 
 //    }
 // };
+
+UIMenu menucito = new UIMenu();
+   menucito.authUser(1);
+   UIMenu menucito1 = new UIMenu();
+   menucito1.showMenu();
 
    }
 }
